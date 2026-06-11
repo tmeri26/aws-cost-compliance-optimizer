@@ -28,3 +28,9 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
         working-directory: terraform
+
+      - name: Install Checkov
+        run: pip install checkov
+
+      - name: Run Checkov Security Scan
+        run: checkov -d terraform
