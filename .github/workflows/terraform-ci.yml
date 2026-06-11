@@ -34,8 +34,3 @@ jobs:
 
       - name: Run Checkov Security Scan
         run: checkov -d terraform --skip-check CKV_AWS_18,CKV2_AWS_62,CKV_AWS_144,CKV_AWS_300
-
-      - name: Run Checkov Security Scan
-        run: |
-          checkov -d terraform \
-            --skip-check CKV_AWS_18,CKV2_AWS_62,CKV_AWS_144  
